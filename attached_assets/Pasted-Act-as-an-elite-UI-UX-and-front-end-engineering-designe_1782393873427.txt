@@ -1,0 +1,197 @@
+Act as an elite UI/UX and front-end engineering designer specializing in luxury, high-performance digital menus. I need you to generate a premium, mobile-responsive web app menu (for a QR code scan) for a high-end café and gaming lounge called "Jeeran" (جيران). 
+
+The currency is Iraqi Dinars (IQD).
+
+### 💎 Luxury Aesthetic & Visual Identity Instructions:
+- **Brand Name:** "Jeeran" (جيران). The vibe should feel like a premium, exclusive esports executive lounge—combining deep, atmospheric dark tones with upscale hospitality elements.
+- **Theme:** Ultra-premium Dark Mode. Use deep obsidian/matte black backgrounds (`#0B0B0F`), sleek frosted-glass container cards (Glassmorphism), and subtle white gold (`#D4AF37`) or neon ice-blue accents for branding details.
+- **Typography:** Crisp, high-end sans-serif typography for English, paired with an elegant, clean modern Arabic typeface (like Cairo or Amiri). 
+- **Layout:** A clean, single-page infinite scroll layout with a fixed, elegant category pill-navigation bar at the top for instantaneous filtering. 
+
+### ⚡ Ultra-Fast Animation & Performance Specifications:
+- **Zero-Latency Feel:** All animations must be snappy and rapid. Set transition durations strictly between 150ms and 200ms using an `ease-out` or `cubic-bezier(0.25, 1, 0.5, 1)` curve to feel light and incredibly responsive.
+- **Micro-Interactions:** - Tapping a menu category should instantly slide or snap the view down to that section with zero lag.
+  - Subtle, instantaneous hover/tap scale effects (e.g., `scale(0.98)`) on item cards to mimic a premium tactile physical button.
+  - Avoid heavy page-load entry animations; prioritize instant content rendering and blazing-fast performance on mobile devices over weak cell signals.
+
+---
+
+### Menu Data (Items and Prices in IQD):
+
+Please display prices clearly followed by "د.ع" or "IQD" using a luxury layout.
+
+#### 1. قسم الاراكيل (Hookah / Shisha Section)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| نعناع | 2000 |
+| ليمون نعناع | 2000 |
+| علك نعناع | 2000 |
+| انكليزي | 2000 |
+| تفاحتين | 2000 |
+| تفاحتين النخلة | 3000 |
+
+#### 2. الارجيلة الالماني (German Hookah)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| ديجافو | 3000 |
+| باونتي | 3000 |
+| معجنات | 3000 |
+| انكليزي | 3000 |
+| بغدادي | 3000 |
+| نعناع | 3000 |
+| خوخ | 3000 |
+| عنب ونعناع | 3000 |
+| حمضيات | 3000 |
+| ليمون ونعناع | 3000 |
+| علك ونعناع | 3000 |
+| جيران | 3000 |
+| برتقال | 3000 |
+| تفاحتين النخلة | 3000 |
+
+#### 3. القهوة الساخنة (Hot Coffee)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| قهوة سادة | 1000 |
+| قهوة وسط | 1000 |
+| قهوة حلوة | 1000 |
+| قهوة بستاشيو | 1500 |
+| قهوة تركية | 1500 |
+
+#### 4. القهوة المختصة (Specialty Coffee)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| اسبريسو سنكل | 2500 |
+| اسبريسو دبل | 3000 |
+| لاتيه | 3000 |
+| موكا | 3000 |
+| وايت موكا | 3000 |
+| كورتادو | 3000 |
+| فلات وايت | 3000 |
+| سبانش لاتيه | 3000 |
+| افوكادو | 4000 |
+
+#### 5. القهوة الباردة (Iced Coffee)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| ايس سبانش | 3000 |
+| ايس لاتيه | 3000 |
+| ايس بستاشيو لاتيه | 3000 |
+| ايس موكا | 3000 |
+| ايس وايت موكا | 3000 |
+| امريكانو | 3000 |
+| كراميل مكياتو | 3500 |
+| شوكولا مثلجة | 3000 |
+| لاتيه بستاشيو | 3500 |
+
+#### 6. كريب - حلا (Crepes)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| فواكه | 4000 |
+| بستاشيو | 4000 |
+| صاج كريب | 4000 |
+| كريب لوتس | 4000 |
+| سوشي كريب | 4000 |
+| فوتوتشيني كريب | 4000 |
+| جيران لغم | 5000 |
+
+#### 7. وافل - حلا (Waffles)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| وافل فواكه | 4000 |
+| وافل بستاشيو | 4000 |
+| وافل لوتس | 4000 |
+
+#### 8. حلويات (Desserts)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| قطعة كيك | 1500 |
+| حلا كاسة | 1500 |
+| بان كيك | 4000 |
+| مني بان كيك | 4000 |
+
+#### 9. العصائر (Fresh Juices)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| برتقال | 1500 |
+| موز | 1500 |
+| بطيخ | 1500 |
+| ليمون | 2500 |
+| ليمون ونعناع | 2500 |
+| برتقال وليمون | 2500 |
+| برتقال وجزر | 2500 |
+| كيوي ليمون | 2500 |
+| فراولة | 2500 |
+| موز فراولة | 2500 |
+| نوتيلا فراولة | 2500 |
+| مشمش | 2500 |
+| رمان | 2500 |
+| مانكا | 3000 |
+| اناناس | 3000 |
+| خوخ | 3000 |
+| كيوي | 3000 |
+| موز ملكي بالمكسرات | 3000 |
+| موز اوريو | 3000 |
+| موز بستاشيو | 3000 |
+| موز بالعسل والمكسرات | 4000 |
+| كوكتيل | 3000 |
+
+#### 10. سموذي (Smoothies)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| اناناس | 3000 |
+| مانكا | 3000 |
+| خوخ | 3000 |
+| حمضيات | 3000 |
+| بلوبيري | 3000 |
+| فراولة | 3000 |
+| فراولة ونوتيلا | 3000 |
+
+#### 11. موهيتو (Mojitos)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| ليمون ونعناع | 2500 |
+| فراولة | 2500 |
+| مكس توت | 2500 |
+| مانكا | 2500 |
+| بلوبيري | 2500 |
+| خوخ | 2500 |
+| بلو كراساو | 2500 |
+
+#### 12. ميلك شيك (Milkshakes)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| كيت كات | 3000 |
+| اوريو | 3000 |
+| نوتيلا | 3000 |
+| بستاشيو | 3000 |
+
+#### 13. المشروبات الساخنة (Hot Drinks)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| شاي | 500 |
+| شاي دبل | 1000 |
+| حامض | 500 |
+| حامض دبل | 1000 |
+| شاي حليب | 1000 |
+| هوت شوكليت | 2000 |
+| كابتشينو | 1000 |
+| هوت لوتس | 2000 |
+
+#### 14. المشروبات الباردة (Cold Drinks)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| ماء | 250 |
+| ماء 750 زجاج | 1500 |
+| كلاص ثلج وليمون | 250 |
+| بيبسي | 500 |
+| بيبسي دايت | 500 |
+| مكسيكي | 2000 |
+| مكسيكي رمان | 2000 |
+
+#### 15. كرزات وشيبس (Snacks)
+| Item (الصنف) | Price (السعر) |
+| :--- | :--- |
+| كرزات | 1000 |
+| شيبس | 1000 |
+
+Please build the clean UI code or system layout adhering perfectly to these premium guidelines.

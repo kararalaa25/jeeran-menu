@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Jeeran Menu"
+version = "1.0.0"
+id = "artifacts/jeeran-menu"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23029
+
+[services.development]
+run = "pnpm --filter @workspace/jeeran-menu run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jeeran-menu", "run", "build" ]
+publicDir = "artifacts/jeeran-menu/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23029"
+BASE_PATH = "/"
