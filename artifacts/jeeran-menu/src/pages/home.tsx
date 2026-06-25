@@ -293,9 +293,6 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-primary tracking-wide drop-shadow-[0_0_8px_rgba(212,175,55,0.4)]">
             جيران
           </h1>
-          <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground mt-1 font-sans">
-            Executive Lounge
-          </p>
         </div>
 
         {/* Category Navigation */}
