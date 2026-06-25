@@ -226,9 +226,10 @@ const MENU_DATA = [
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState(MENU_DATA[0].id);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const isClickScrolling = useRef(false);
+  const clickScrollTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    // Force document to be fully dark and RTL
     document.documentElement.classList.add("dark");
     document.documentElement.dir = "rtl";
     document.documentElement.lang = "ar";
@@ -236,16 +237,15 @@ export default function Home() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the most visible section
+        if (isClickScrolling.current) return;
+
         const visibleEntries = entries.filter((entry) => entry.isIntersecting);
         if (visibleEntries.length > 0) {
-          // Sort by intersection ratio or just take the first one
           const mostVisible = visibleEntries.reduce((prev, current) =>
             prev.intersectionRatio > current.intersectionRatio ? prev : current
           );
           setActiveCategory(mostVisible.target.id);
-          
-          // Scroll the nav pill into view
+
           const activePill = document.getElementById(`pill-${mostVisible.target.id}`);
           if (activePill && scrollContainerRef.current) {
             activePill.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
@@ -266,9 +266,22 @@ export default function Home() {
   const scrollToCategory = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const yOffset = -120; // adjust for sticky header
+      isClickScrolling.current = true;
+      setActiveCategory(id);
+
+      const activePill = document.getElementById(`pill-${id}`);
+      if (activePill && scrollContainerRef.current) {
+        activePill.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
+
+      const yOffset = -120;
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+
+      if (clickScrollTimer.current) clearTimeout(clickScrollTimer.current);
+      clickScrollTimer.current = setTimeout(() => {
+        isClickScrolling.current = false;
+      }, 800);
     }
   };
 
